@@ -169,7 +169,7 @@ h4{
 
 .containSecond{
     position: relative;
-    background-image: url(/img/asset\ 5.webp);
+    background-image: url(./img/asset\ 5.webp);
     background-color: rgba(0, 108, 250, 0.829);
     filter: contrast(50%);
     background-size: 100%;
