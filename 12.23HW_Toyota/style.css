@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    margin: auto;
+}
+
+.main{
+    width: 1200px;
+}
+
+h1{
+    text-align: center;
+    color:#534e4e;
+    font-weight:bolder;
+    margin: 10px;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    line-height:100px;
+}
+
+h3{
+    font-size: 24px;
+    padding:10px 20px 0 20px;
+    color:#fff;
+    background-color: #000;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #000;
+    color:#fff;
+}
+
+/* h1::before{
+    content:'';
+    width: 40px;
+    height: 2px;
+    background-color:#000;
+    position: absolute;
+    top: 50px;
+    left:cala(50%);
+} */
+
+.navbar{
+    margin: 40px;
+    justify-content: center;
+}
+
+.navbar li{
+    border:1px dashed #aaa;
+    border-bottom: 2px solid #ae0014;
+    margin:0 10px;
+}
+
+.navbar a{
+    padding:0 30px;
+    line-height: 30px;
+    text-decoration:none;
+    color:#000;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.info-item-01{
+    justify-content: center;
+    margin-top: 220px;
+    position: relative;
+}
+
+.info-img{
+    margin: auto;
+    z-index:1;
+}
+
+.info-YT-img-odd{
+    position: absolute;
+    z-index:2;
+    top: 40%;
+    right: 240px;
+}
+
+.topic-info-odd{
+    width: 330px;
+    position: absolute;
+    z-index:2;
+    left: 150px;
+
+}
+
+.topic-info-01{
+    bottom: 190px;
+}
+
+.topic-info-title-odd{
+    justify-content: flex-start;
+    font-weight: bold;
+    background-color: #bb0404;
+    color:#fff;
+}
+
+.topic-info-number-odd{
+    font-size: 100px;
+    transform: rotate(90deg);
+    line-height:100px;
+}
+
+.topic-info-txt{
+    background-color: #000;
+    color:#fff;
+    padding: 0 20px 40px 20px;
+    font-size: 20px;
+}
+
+.info-item-bgc-odd::before{
+    content: '';
+    background-color: #f5f5f5;
+    position: absolute;
+    /* border: 1px solid #000; */
+    width: 400px;
+    height: 250px;
+    bottom: 210px;
+    left: 650px;
+}
+
+.info-reason-odd{
+    margin: 20px;
+    padding:10px 20px;
+    width: 610px;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 340px;
+    left: 200px;
+    z-index:2;
+}
+
+.info-reason-odd span{
+    color:#be1212;
+    font-weight:900;
+    margin: 10px 0;
+    display:inline-block;
+    font-size: 20px;
+}
+
+.info-reason-odd span::after{
+    content: '';
+    border: 0.1px solid #be1212;
+    width: 390px;
+    position: absolute;
+    top: 32px;
+    right: 30px;
+}
+
+.info-reason-01 h4{
+    width: 16%;
+}
+
+.info-reason-odd li{
+    margin: 3px 0;
+    padding:0 10px;
+    text-indent: -5px;
+
+}
+
+.info-reason-odd li::before{
+    content: '▪';
+    color: #be1212;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+.info-item-02{
+    justify-content: center;
+    margin-top: 40%;
+    position: relative;
+}
+
+.info-YT-img-even{
+    position: absolute;
+    z-index:2;
+    top: 40%;
+    left: 240px;
+}
+
+.topic-info-even{
+    width: 330px;
+    position: absolute;
+    right: 150px;
+    z-index:2;
+}
+
+.topic-info-02{
+    bottom: 215px;
+}
+
+.topic-info-title-even{
+    justify-content: flex-end;
+    font-weight: bold;
+    background-color: #bb0404;
+    color:#fff;
+}
+
+.topic-info-number-even{
+    font-size: 100px;
+    transform: rotate(90deg);
+    line-height:100px;
+}
+
+.topic-info-txt{
+    background-color: #000;
+    color:#fff;
+    padding: 0 20px 40px 20px;
+    font-size: 20px;
+}
+
+.info-item-bgc-even::before{
+    content: '';
+    background-color: #f5f5f5;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    bottom: 210px;
+    left: 450px;
+}
+
+.info-reason-even{
+    margin: 20px;
+    padding:10px 20px;
+    width: 610px;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 340px;
+    right: 100px;
+    z-index:2;
+}
+
+.info-reason-even span{
+    color:#be1212;
+    font-weight:900;
+    margin: 10px 0;
+    display:inline-block;
+    font-size: 20px;
+}
+
+.info-reason-even span::after{
+    content: '';
+    border: 0.1px solid #be1212;
+    width: 390px;
+    position: absolute;
+    top: 32px;
+    right: 30px;
+}
+
+.info-reason-02 h4{
+    width: 11%;
+}
+
+.info-reason-even li{
+    margin: 3px 0;
+    padding:0 10px;
+    text-indent: -5px;
+
+}
+
+.info-reason-even li::before{
+    content: '▪';
+    color: #be1212;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+.info-item-03{
+    justify-content: center;
+    margin-top: 30%;
+    position: relative;
+}
+
+.info-YT-img-odd{
+    position: absolute;
+    z-index:2;
+    top: 40%;
+    right: 240px;
+}
+
+.topic-info-03{
+    bottom: 163px;
+}
+
+.topic-info-title-odd{
+    justify-content: flex-start;
+    font-weight: bold;
+    background-color: #bb0404;
+    color:#fff;
+}
+
+.topic-info-number-odd{
+    font-size: 100px;
+    transform: rotate(90deg);
+    line-height:100px;
+}
+
+.topic-info-txt{
+    background-color: #000;
+    color:#fff;
+    padding: 0 20px 40px 20px;
+    font-size: 20px;
+}
+
+.info-item-bgc-odd::before{
+    content: '';
+    background-color: #f5f5f5;
+    position: absolute;
+    /* border: 1px solid #000; */
+    width: 400px;
+    height: 250px;
+    bottom: 210px;
+    left: 650px;
+}
+
+.info-reason-odd{
+    margin: 20px;
+    padding:10px 20px;
+    /* padding: 10px 2em; */
+    width: 610px;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 340px;
+    left: 200px;
+    z-index:2;
+}
+
+.info-reason-odd span{
+    color:#be1212;
+    font-weight:900;
+    margin: 10px 0;
+    display:inline-block;
+    font-size: 20px;
+}
+
+.info-reason-odd span::after{
+    content: '';
+    border: 0.1px solid #be1212;
+    width: 390px;
+    position: absolute;
+    top: 32px;
+    right: 30px;
+}
+
+.info-reason-03 h4{
+    width: 19%;
+}
+
+.info-reason-odd li{
+    margin: 3px 0;
+    padding:0 10px;
+    text-indent: -5px;
+
+}
+
+.info-reason-odd li::before{
+    content: '▪';
+    color: #be1212;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.info-item-04{
+    justify-content: center;
+    margin-top: 40%;
+    position: relative;
+}
+
+.topic-info-04{
+    bottom: 163px;
+}
+
+.info-reason-04 h4{
+    width: 22%;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+.info-item-05{
+    justify-content: center;
+    margin-top: 35%;
+    position: relative;
+}
+
+.topic-info-05{
+    bottom: 187px;
+}
+
+.info-reason-05 h4{
+    width: 11%;
+}
+
