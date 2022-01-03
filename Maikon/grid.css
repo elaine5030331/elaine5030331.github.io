@@ -1,9 +1,9 @@
 /* 固定寬的容器 */
 .container {
-    max-width: 960px;
+    max-width: 100%;
     margin: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 
@@ -12,15 +12,15 @@
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -40px;
-    margin-right: -40px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 /* 使用屬性選取器：當 class 名稱出現 'col-' 時，要做{}內的動作 */
 [class*='col-'],
 [class*='row-cols'] > .col{
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 

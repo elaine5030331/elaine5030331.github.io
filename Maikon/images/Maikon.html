@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="to-top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../grid.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         /* .row{
             border: 1px solid #000;
@@ -21,10 +28,19 @@
 </head>
 <body>
 <header>
+    <input type="checkbox" name="" id="menu-control">
+
     <section class="logo-section">
         <div class="logo">
             <img src="./asset 0.webp" alt="">
         </div>
+
+        <label for="menu-control" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <nav class="logo-nav">
             <a href="">Home</a>
             <a href="">About</a>
@@ -36,14 +52,21 @@
         </nav>
     </section>
 
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-2">
+    <section class="container">
+        <div class="row header-row row-cols-1 row-cols-md-2">
             <div class="col ">
                 <div class="item">
                     <h2>Our creativity is your success</h2>
                     <p>We break all boundaries if they happen on our way of project’s development!</p>
-                    <a href=""> LEARN MORE</a>
-                    <a href="">WATCH VIDEO</a>
+                    <span>
+                        <a class="green-btn" href=""> LEARN MORE</a>
+                    </span>
+                    <sapn >
+                        <a class="watch-video-btn" href="">WATCH VIDEO
+                            <!-- <img src="../images/play.jpg" alt=""> -->
+                        </a>
+                    </sapn>
+
                 </div>
             </div>
             <div class="col">
@@ -53,13 +76,17 @@
             </div>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-2 second-row">
+        <div class="row header-row row-cols-1 row-cols-md-2 second-row">
             <div class="col">
                 <div class="item">
                     <h2>Creative challenges are our passion</h2>
                     <p>Our team of designers and developers work closely together to build a creative and positive working environment. Functionality is as important to us as aesthetics.</p>
-                    <a href="">ABOUT US</a>
-                    <a href="">CONTACT US</a>
+                    <span>
+                        <a class="green-btn" href="">ABOUT US</a>
+                    </span>
+                    <span>
+                        <a class="white-btn" href="">CONTACT US</a>
+                    </span>
                 </div>
             </div>
             <div class="col">
@@ -67,9 +94,417 @@
                     <img src="./asset 3.webp" alt="">
                 </div>
             </div>
+        </div>
+    </section>
+</header>
+<main>
+    <section class="container service-container">
+        <div class="row service-title-row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="item">
+                    <p>
+                        We provide a wide range of creative services
+                     </p>
+                </div>
+            </div>
 
         </div>
+
+        <div class="row service-row row-cols-1 row-cols-md-3">
+            <div class="col">
+                <div class="item">
+                    <div class="service-img">
+                        <img src="../images/asset 4.svg" alt="">
+                    </div>
+                    <h3>Web Design & Brending</h3>
+                    <p>A great brand combines design and conveys company’s value messaging to evoke emotion and drive strategy.</p>
+                    <a class="read-more-btn" class="read-more-btn" href="">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="item">
+                    <div class="service-img">
+                        <img src="../images/asset 5.svg" alt="">
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Rich experience plus unlimited imagination create our successful service discovered by clients.</p>
+                    <a class="read-more-btn" href="">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="item">
+                    <div class="service-img">
+                        <img src="../images/asset 6.svg" alt="">
+                    </div>
+                    <h3>Video Production</h3>
+                    <p>Creating and handling professional video is our strong point. It plays major role in your digital business strategy.</p>
+                    <a class="read-more-btn" href="">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="item">
+                    <div class="service-img">
+                        <img src="../images/asset 7.svg" alt="">
+                    </div>
+                    <h3>SEO</h3>
+                    <p>We provide everything your site needs to perform at it’s highest capabilities on the major search engines.</p>
+                    <a class="read-more-btn" href="">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="item">
+                    <div class="service-img">
+                        <img src="../images/asset 8.svg" alt="">
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>We do collateral design, interactive design, hoarding, signage, presentation centres, and more.</p>
+                    <a class="read-more-btn" href="">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="item">
+                    <div class="service-img">
+                        <img src="../images/asset 9.svg" alt="">
+                    </div>
+                    <h3>Infographics</h3>
+                    <p>Turn your data into captivating artwork that will keep your audience engaged. Our team can help you with it.</p>
+                    <a class="read-more-btn" href="">READ MORE</a>
+                </div>
+            </div>
     </div>
-</header>
+    </section>
+
+    <section class="container invite-container">
+        <div class="row invite-row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="item">
+                    <h2>If you have any questions, please contact us</h2>
+                    <p>Our professional support team try to do their best to provide you with high-quality consultations concerning any question about our services.</p>
+                    <span>
+                        <a class="green-btn" href="">CONTACT US</a>
+                    </span>
+                    <span>
+                        <a class="white-btn" href="">SUBSCRIBE</a>
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <div>
+                        <img src="./asset 10.svg" alt="A women using the laptop">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container choosing-reason-container">
+        <div class="row choosing-reason-row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="row choosing-reason-statistic-row row-cols-1 row-cols-md-2">
+                    <div class="col">
+                        <div class="item">
+                            <span>1880+</span>
+                            <p>Completed projects to the end by our specialists.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="item">
+                            <span>56</span>
+                            <p>A large team of the best specialists.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="item">
+                            <span>2000+</span>
+                            <p>Customers who were satisfied with our work.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="item">
+                            <span>100%</span>
+                            <p>Our values are good organization and result orientation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <h2>Why choose our studio for your projects?</h2>
+                    <p>We are a command of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills.</p>
+                    <span >
+                        <a class="order-service-btn" href="">ORDER SERVICE</a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container steps-of-work-container">
+        <div class="row steps-of-work-title-row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="item">
+                    <p>Steps of our work</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row steps-of-work-row">
+            <div class="col steps-of-work-01-col col-12 col-md-3">
+                <div class="item">
+                    <img src="../images/asset 11.svg" alt="">
+                </div>
+            </div>
+            <div class="col col-12 col-md-1">
+                <div class="item">
+                    <img src="../images/asset 13.svg" alt="">
+                </div>
+            </div>
+            <div class="col col-12 col-md-4">
+                <div class="item">
+                    <p>Meeting With The Customer</p>
+                    <span>The first meeting is very import to form contact and discuss the main ideas of the project.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row steps-of-work-row">
+            <div class="col steps-of-work-02-col col-12 col-md-3">
+                <div class="item">
+                    <img src="../images/asset 16.svg" alt="">
+                </div>
+            </div>
+            <div class="col col-12 col-md-4">
+                <div class="item">
+                    <p>We Consider And Analyze The Work Plan</p>
+                    <span>When we understand the main eideas, we proceed to discussing the work plan and analyzing it.</span>
+                </div>
+            </div>
+            <div class="col col-12 col-md-1">
+                <div class="item">
+                    <img src="../images/asset 15.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row steps-of-work-row">
+            <div class="col steps-of-work-03-col col-12 col-md-3">
+                <div class="item">
+                    <img src="../images/asset 17.svg" alt="">
+                </div>
+            </div>
+            <div class="col col-12 col-md-1">
+                <div class="item">
+                    <img src="../images/asset 19.svg" alt="">
+                </div>
+            </div>
+            <div class="col col-12 col-md-4">
+                <div class="item">
+                    <p>Work Hard On The Project</p>
+                    <span>Our professional team start to handle with your project and embody the conception of the project.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row steps-of-work-row">
+            <div class="col steps-of-work-04-col col-12 col-md-3">
+                <div class="item">
+                    <img src="../images/asset 22.svg" alt="">
+                </div>
+            </div>
+            <div class="col col-12 col-md-4">
+                <div class="item">
+                    <p>Once Again We Analyze And Check Everything</p>
+                    <span>We meet, analyze and check the done work and make needed corrections.</span>
+                </div>
+            </div>
+            <div class="col col-12 col-md-1">
+                <div class="item">
+                    <img src="../images/asset 21.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row steps-of-work-row">
+            <div class="col steps-of-work-05-col col-12 col-md-3">
+                <div class="item">
+                    <img src="../images/asset 23.svg" alt="">
+                </div>
+            </div>
+            <div class="col col-12 col-md-1">
+                <div class="item">
+                    <img src="../images/asset 24.svg" alt="">
+                </div>
+            </div>
+            <div class="col col-12 col-md-4">
+                <div class="item">
+                    <p>We Finish The Work And Give It To The Customer</p>
+                    <span>The project is ready and we give it to the customer. Also we ask for the feedback from the customer.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container projects-container">
+        <div class="row projects-title-row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="item">
+                    <p>Our team's work with Projects</p>
+                </div>
+            </div>
+            <div class="col projects-btn-col">
+                <div class="item">
+                    <a href="">ALL PROJECTS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row projects-row row-cols-1 row-cols-md-3">
+            <div class="col">
+                <div class="item">
+                    <img src="../images/asset 25.webp" alt="">
+                    <div class="projects-text">
+                        <p>Minimal Creative "Impuls"</p>
+                        <a href="">VEIW SITE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <img src="../images/asset 26.webp" alt="">
+                    <div class="projects-text">
+                        <p>Travel Company "Tour Up"</p>
+                        <a href="">VEIW SITE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <img src="../images/asset 27.webp" alt="">
+                    <div class="projects-text">
+                        <p>Restaurant Pizza "Little Italy"</p>
+                        <a href="">VEIW SITE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container sign-up-container">
+        <div class="row sign-up-row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="item">
+                    <img src="../images/asset 28.svg" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <p>Sign up for our consultation</p>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <textarea name="message" id="" cols="40" rows="10" placeholder="Message"></textarea>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row subscribe-row row-cols-1">
+            <div class="col">
+                <div class="item">
+                    <p>Subscribe to our news and learn more</p>
+                    <input type="text" placeholder="Your email">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col">
+                <div class="item">
+                    <div>
+                        <p>
+                            <img src="./asset 0.webp" alt="">
+                        </p>
+                        <span>Phone:</span>
+                        <span>
+                            + 1 (045) - 224 - 12 - 67</span>
+                        <span>Mail:</span>
+                        <span>
+                            info@demolink.org</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="item">
+                    <p>Services</p>
+                    <a href="#">Web design & brending</a>
+                    <a href="#">Web development</a>
+                    <a href="#">Full Optimization</a>
+                    <a href="#">Research & Strategy</a>
+                    <a href="#">Management & Marketing</a>
+                    <a href="#">Free support</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="item">
+                    <p>About Company</p>
+                    <a href="#">About us</a>
+                    <a href="#">Team</a>
+                    <a href="#">Case studio</a>
+                    <a href="#">Contacts</a>
+                </div>
+            </div>
+
+            <div class="col social-icon">
+                <div class="item">
+                    <p>Our Social Networks</p>
+                    <span>Join us in the social networks and keep up on the latest news.</span>
+                    <div class="footer-icon">
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row copy-right-row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="item">
+                    <p>Copyright &copy; 2018 Wordpress Maikon. All Rights Reserved. | Theme design by <a href="">Zemez</a> </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <p>
+                        <a href="#">Privacy & Policy</a>
+                        <a href="#"> FAQ</a>
+                        <a href="#to-top">
+                            <img src="../images/to-top.jpg" alt="">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
+
