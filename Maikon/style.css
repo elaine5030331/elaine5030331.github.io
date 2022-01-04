@@ -364,37 +364,77 @@ p{
     color: #1d273b;
 }
 
-.steps-of-work-row .item img{
-    width: 100%;
-}
-
 .steps-of-work-row span{
     line-height: 24px;
     color: #949aa6;
 }
 
-.steps-of-work-row:nth-child(odd){
-    flex-direction: row-reverse;
+@media screen and (min-width:768px){
+    .steps-of-work-row{
+        margin: 35px 0;
+    }
+
+    .steps-of-work-row:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    .steps-of-work-info-01-col{
+        margin-right: 18.666666%;
+    }
+
+    .steps-of-work-info-02-col{
+        margin-left: 25%;
+    }
+
+    .steps-of-work-info-03-col{
+        margin-right: 16.666666%;
+    }
+
+    .steps-of-work-info-04-col{
+        margin-left: 16.666666%;
+    }
+
+    .steps-of-work-info-05-col{
+        margin-right: 21.66666%;
+    }
+
+    /* 四個箭頭 */
+    .steps-of-work-num-01-col, .steps-of-work-num-02-col, .steps-of-work-num-03-col, .steps-of-work-num-04-col{
+        position: relative;
+    }
+
+    .steps-of-work-arrow-01{
+        position: absolute;
+        right: 85%;
+        top: 95%;
+    }
+
+    .steps-of-work-arrow-02{
+        position: absolute;
+        left: 36%;
+        top: 90%;
+    }
+
+    .steps-of-work-arrow-03{
+        position: absolute;
+        right: 65%;
+        top: 85%;
+    }
+
+    .steps-of-work-arrow-04{
+        position: absolute;
+        left: 25%;
+        top: 90%;
+        transform: rotate(3deg);
+    }
 }
 
-.steps-of-work-01-col{
-    margin-left: 16.66666%;
-}
+/* 四個箭頭 */
+@media screen and (max-width:767px){
+    .steps-of-work-arrow-01, .steps-of-work-arrow-02, .steps-of-work-arrow-03, .steps-of-work-arrow-04{
+        display: none;
+    }
 
-.steps-of-work-02-col{
-    margin-right: 8.333333%;
-}
-
-.steps-of-work-03-col{
-    margin-left: 8.3333%;
-}
-
-.steps-of-work-04-col{
-    margin: 0 8.3333%;
-}
-
-.steps-of-work-05-col{
-    margin-left: 16.66666%;
 }
 
 /* -----------------------------projects-------------- */
