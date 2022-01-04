@@ -617,6 +617,31 @@ footer a, footer span{
     padding: 5px 0;
 }
 
+.about-us-logo{
+    margin: 10px 0;
+}
+
+.about-us-logo img{
+    width: 75%;
+}
+
+.about-us-phone, .about-us-mail{
+    color:#1fde82;
+    font-weight: bold;
+}
+
+.about-us-phone::after{
+    content: '+ 1(045)-224-12-67';
+    color: #9196a0;
+    font-weight: normal;
+}
+
+.about-us-mail::after{
+    content: 'info@demolink.org';
+    color: #9196a0;
+    font-weight: normal;
+}
+
 footer a:hover{
     color:#1fde82;
 }
