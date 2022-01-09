@@ -1,0 +1,124 @@
+/* .navbar{
+    box-shadow: 0px -3px 12px 0px #ccc;
+} */
+
+body{
+    font-family:'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+p{
+    line-height: 30px;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.row-title, .row-title p{
+    font-size: 36px;
+    color:#1d273b;
+    line-height:50px;
+}
+
+/* -------------------------改bs內建-------------------- */
+@media screen and (min-width:1200px) {
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+        font-size: 0px;
+        font-weight: normal;
+    }
+}
+
+
+
+/* ----------------------header------------------------------------------ */
+.header-container{
+    width: 1200px;
+    margin: auto;
+}
+
+.header-row:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.header-row p{
+    color:#707888;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-btn{
+    display: inline-block;
+    color:#fff;
+    background-color: #1fde82;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.green-btn:hover{
+    background-color: #5d6678;
+    color:#fff;
+}
+
+.white-btn{
+    display: inline-block;
+    color:#5d6678;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.white-btn:hover{
+    color:#fff;
+    background-color: #1fde82;
+}
+
+/* -----------------------service---------------------------------- */
+.card{
+    border: none;
+    box-shadow: 0px 0px 15px 1px #ccc;
+}
+
+.service-container img{
+    width: 25%;
+}
+
+
+.service-row h3{
+    color:#1d273b;
+    font-size: 20px;
+}
+
+.service-row p{
+    color:#949aa6;
+}
+
+.read-more-btn{
+    color: #5d6678;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.read-more-btn:hover{
+    color:#1fde82;
+}
+
+/* --------------------invite-------------------------------- */
+.invite-row p{
+    color:#707888;
+}
