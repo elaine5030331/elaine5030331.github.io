@@ -23,13 +23,19 @@ window.onload = function () {
   drawPieChart(companies, data);
 };
 
-let companies = [],
+const container = document.createElement('div');
+const companies = [],
   data = [];
-let table = document.querySelector('table');
-let thead = document.createElement('thead');
-let theadTr = document.createElement('tr');
-let tbody = document.createElement('tbody');
+const table = document.querySelector('table');
+const thead = document.createElement('thead');
+const theadTr = document.createElement('tr');
+const tbody = document.createElement('tbody');
 
+container.classList.add('container', 'container-sm', 'mt-5', 'mb-5');
+theadTr.classList.add('text-center');
+tbody.classList.add('text-center');
+
+//thead
 function createThead(titlesArray) {
   titlesArray.titles.forEach((title) => {
     let th = document.createElement('th');
@@ -38,8 +44,11 @@ function createThead(titlesArray) {
   });
   thead.appendChild(theadTr);
   table.appendChild(thead);
+  container.appendChild(table);
+  document.body.appendChild(container);
 }
 
+//tbody
 function createTbody(RowDataArray) {
   RowDataArray.data.forEach((Rowdata) => {
     let tbodyTr = document.createElement('tr');
