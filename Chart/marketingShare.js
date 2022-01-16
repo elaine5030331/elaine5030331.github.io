@@ -31,7 +31,7 @@ const thead = document.createElement('thead');
 const theadTr = document.createElement('tr');
 const tbody = document.createElement('tbody');
 
-container.classList.add('container', 'container-sm', 'mt-5', 'mb-5');
+container.classList.add('container', 'w-');
 theadTr.classList.add('text-center');
 tbody.classList.add('text-center');
 
