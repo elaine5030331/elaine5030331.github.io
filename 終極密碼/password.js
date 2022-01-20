@@ -42,24 +42,31 @@ function getRandom(min, max) {
 let min = 0;
 let max = 100;
 function correctOrFault() {
-  var t = typeof Number(playerInput.value);
+  // var t = typeof Number(playerInput.value);
   if (typeof Number(playerInput.value) != 'number') {
     alert('請輸入數字');
   } else {
-    if (playerInput.value > min && playerInput.value < max) {
-      if (playerInput.value != randomNum) {
-        if (playerInput.value < randomNum) {
-          playerAnsShowBox.innerText = `${playerInput.value} - ${max}`;
-          min = playerInput.value;
+    //將玩家輸入的值轉成數字再進行比較
+    let trans = Number(playerInput.value);
+    //如果輸入的數字是小數就會跳出迴圈
+    if (/^\d*$/.test(trans)) {
+      if (trans > min && trans < max) {
+        if (trans != randomNum) {
+          if (trans < randomNum) {
+            playerAnsShowBox.innerText = `${trans} - ${max}`;
+            min = trans;
+          } else {
+            playerAnsShowBox.innerText = `${min} - ${trans}`;
+            max = trans;
+          }
         } else {
-          playerAnsShowBox.innerText = `${min} - ${playerInput.value}`;
-          max = playerInput.value;
+          alert('恭喜答對');
         }
       } else {
-        alert('恭喜答對');
+        alert('請輸入範圍內的數字');
       }
     } else {
-      alert('請輸入範圍內的數字');
+      alert('請輸入整數');
     }
   }
 }
