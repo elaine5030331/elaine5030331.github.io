@@ -1,0 +1,11 @@
+.btn {
+  width: 55%;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.btn-zero {
+  width: 70%;
+  border-radius: 50px;
+  padding: 10px;
+}
