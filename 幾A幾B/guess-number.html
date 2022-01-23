@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>幾A幾B</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+        <h1 class="bg-dark text-warning text-center p-3 mb-4">猜數字 - 幾A幾B</h1>
+    </header>
+    <section class="container">
+        <div class="text-center">
+            <input id="get-start-btn" class="btn btn-outline-secondary" type="button" value="開始遊戲">
+            <input id="give-up-btn" class="btn btn-outline-danger" type="button" value="放棄遊戲">
+        </div>
+        <div class="row mt-5">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row-cols-2 d-flex">
+                    <div class="col d-flex flex-column">
+                        <p><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tens">00</span></p>
+                        <div class="p game-history">歷史紀錄</div>
+                    </div>
+                    <div class="col">
+                        <div class="col d-flex">
+                            <input type="text" class="player-input p-1 mx-auto mb-3">
+                        </div>
+                        <div class="num-btns">
+                            <div class="col-6 mb-3 number-btn-one-to-three d-flex flex-row  mx-auto justify-content-evenly">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="1">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="2">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="3">
+                            </div>
+                            <div class="col col-6 mb-3 number-btn-four-to-six d-flex flex-row mx-auto justify-content-evenly">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="4">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="5">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="6">
+                            </div>
+                            <div class="col col-6 mb-3 number-btn-seven-to-nine d-flex flex-row mx-auto justify-content-evenly">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="7">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="8">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="9">
+                            </div>
+                            <div class="col col-6 mb-3 number-btn-zero-col d-flex flex-row mx-auto justify-content-evenly">
+                                <input id="clear-btn" class="btn btn-danger m-1" type="button" value="X">
+                                <input class="btn btn-dark m-1 number-btn" type="button" value="0">
+                                <input id="guess-btn" class="btn btn-success m-1" type="button" value="猜">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./guess-number.js"></script>
+  </body>
+</html>
