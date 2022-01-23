@@ -7,6 +7,7 @@ let playerAnsShowBox = document.querySelector('.player-ans-showBox');
 //抓取每個數字 btn → 迭代
 //按到哪個數字按鈕，其值會逐一加到玩家猜的 input
 numberBtn.forEach((btn) => {
+  console.log(btn);
   btn.addEventListener('click', function (event) {
     playerInput.value += btn.value;
   });
