@@ -11,6 +11,9 @@ const get_start_btn = document.querySelector('#get-start-btn');
 //放棄遊戲(顯示答案)V
 const give_up_btn = document.querySelector('#give-up-btn');
 
+//重新開始
+const restart_btn = document.querySelector('#restart-btn');
+
 //時間計時 分
 let appendMinutes = document.querySelector('#minutes');
 
@@ -41,7 +44,7 @@ window.onload = function () {
     ans = getAns();
     clearInterval(interval);
     interval = setInterval(startTimer, 10);
-    console.log(ans);
+    // console.log(ans);
   });
 
   //放棄遊戲
@@ -71,6 +74,12 @@ window.onload = function () {
   guess_btn.addEventListener('click', function () {
     guessAnswer();
     player_guess.value = '';
+  });
+
+  //重新開始按鈕
+  restart_btn.addEventListener('click', function () {
+    resetGame();
+    requestTime();
   });
 };
 
@@ -132,3 +141,9 @@ function startTimer() {
     appendSeconds.innerHTML = '0' + 0;
   }
 }
+
+function resetGame() {
+  game_history.innerHTML = '歷程記錄';
+}
+
+function resetTime() {}
