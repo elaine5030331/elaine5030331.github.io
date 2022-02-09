@@ -1,0 +1,28 @@
+img {
+  width: 110%;
+  border-radius: 50%;
+}
+
+#msg {
+  background-image: './img/mirror.jfif';
+}
+
+[box-id] {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: 0.3s;
+}
+
+[box-id].active {
+  /* border: 5px solid #444; */
+  box-shadow: 0 0 30px #444;
+  transition: 0s;
+}
+
+#msg {
+  font-size: 36px;
+  text-align: center;
+}
