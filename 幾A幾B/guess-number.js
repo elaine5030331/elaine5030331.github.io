@@ -1,8 +1,8 @@
 let ans = [];
 let player_guess = [];
-let minutes = 00;
-let seconds = 00;
-let tens = 00;
+let minutes = 0;
+let seconds = 0;
+let tens = 0;
 let interval;
 
 //開始遊戲V
@@ -17,10 +17,10 @@ const restart_btn = document.querySelector('#restart-btn');
 //時間計時 分
 let appendMinutes = document.querySelector('#minutes');
 
-//時間計時 分
+//時間計時 秒
 let appendSeconds = document.querySelector('#seconds');
 
-//時間計時 分
+//時間計時 時
 let appendTens = document.querySelector('#tens');
 
 //歷史紀錄
@@ -79,7 +79,7 @@ window.onload = function () {
   //重新開始按鈕
   restart_btn.addEventListener('click', function () {
     resetGame();
-    requestTime();
+    resetTime();
   });
 };
 
@@ -146,4 +146,8 @@ function resetGame() {
   game_history.innerHTML = '歷程記錄';
 }
 
-function resetTime() {}
+function resetTime() {
+  appendSeconds.innerHTML = '00';
+  appendTens.innerHTML = '00';
+  appendTens.innerHTML = '00';
+}
